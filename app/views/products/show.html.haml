@@ -1,0 +1,35 @@
+/ %p#notice= notice
+
+/ %p
+/   %b Url:
+/   = @product.url
+/ %p
+/   %b Title:
+/   = @product.title
+/ %p
+/   %b Category:
+/   = @product.category_id
+/ %p
+/   %b Price:
+/   = @product.price
+
+/ = link_to 'Edit', edit_product_path(@product)
+/ \|
+/ = link_to 'Back', products_path
+= link_to 'Back', products_path
+.row-fluid
+  %p
+    %b Url:
+    = @product.url
+  %p
+    %b Title:
+    = @product.title
+  %p
+    %b Category:
+    = @product.category.name
+  %p
+    %b Price:
+    = @product.price
+  %p
+    %b Photo:
+    = link_to image_tag(@product.product_photos.first.photo(:medium))

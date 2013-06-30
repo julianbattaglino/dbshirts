@@ -1,1 +1,8 @@
-%h3 Home
+%h3.span4.btn= link_to "Geeky Douche"
+%h3.span4.btn= link_to "True Douche"
+%h3.span4.btn= link_to "Party Douche"
+.row-fluid
+  %hr
+= render '/products/display', locals: @products
+
+

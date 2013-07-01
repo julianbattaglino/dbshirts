@@ -2,11 +2,11 @@
   .span6
     .medium
       - @product.product_photos.each_with_index do |photo, index|
-        = link_to image_tag(photo.photo(:medium)), @product.title, id: "id-#{photo.id}",  class: (index > 0 ? ' hidden' : '')
+        = link_to image_tag(photo.photo(:large)), @product.title, id: "id-#{photo.id}",  class: (index > 0 ? ' hidden' : '')
     .row-fluid.thumbs
       - @product.product_photos.each do |photo|
         = link_to image_tag(photo.photo(:thumb)), @product.title, photo_id: "id-#{photo.id}"
-  .span6
+  .span6.info
     %p
       = link_to "Buy the shirt",  @product.deep_link, class: "btn btn-primary"
     %p

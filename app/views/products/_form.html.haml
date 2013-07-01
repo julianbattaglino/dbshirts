@@ -17,7 +17,13 @@
     = select("product", "category_id", Category.all.collect {|c| [ c.name , c.id ] })
   .field
     = f.label :price
-    = f.number_field :price
+    = f.text_field :price
+  .field
+    = f.label :tags_separate_new_tags_with_commas
+    = f.text_field :tag_list
+  .field
+    = f.label :featured
+    = f.check_box :featured
   .field
     = link_to_add_fields "Add Image", f, :product_photos 
   .actions

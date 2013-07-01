@@ -8,3 +8,11 @@ function add_fields(link, association, content) {
 	var regexp = new RegExp("new_" + association, "g");
 	$(link).parent().append(content.replace(regexp, new_id));
 }
+$(document).ready(function(){
+  $('.thumbs a').click(function() {
+    $('.medium a').addClass('hidden');
+    var id = $(this).attr('photo_id');
+    $('#' + id).removeClass('hidden');
+    return false;
+  });
+});

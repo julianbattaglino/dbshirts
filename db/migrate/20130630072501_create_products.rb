@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :title
       t.integer :category_id
       t.decimal :price, :precision => 10, :scale => 2
+      t.boolean :featured, default: false
 
       t.timestamps
     end

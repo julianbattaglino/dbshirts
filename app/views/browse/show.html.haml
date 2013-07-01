@@ -1,0 +1,6 @@
+.row-fluid
+  .span3
+    = render 'side_nav'
+  .span9
+    = render '/products/display', locals: @products
+    = render 'pagination'

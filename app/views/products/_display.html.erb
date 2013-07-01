@@ -4,7 +4,7 @@
     	<div class="row-fluid">
   	<% end %>
   	<div class="span3 product"><%= link_to image_tag(product.product_photos.first.photo(:small)), product %></div>
-    <% if (index + 1) % 4 == 0 %>
+    <% if (index + 1) % 4 == 0 || @products.count == (index + 1)%>
     	</div>
   	<% end %>
 	<% end %>	

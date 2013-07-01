@@ -1,25 +1,27 @@
 %h1 Listing products
-
-%table
-  %tr
-    %th Url
-    %th Title
-    %th Category
-    %th Price
-    %th
-    %th
-    %th
-
-  - @products.each do |product|
+.row-fluid
+  %table.table
     %tr
-      %td= product.url
-      %td= product.title
-      %td= product.category_id
-      %td= product.price
-      %td= link_to 'Show', product
-      %td= link_to 'Edit', edit_product_path(product)
-      %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %th Id
+      %th Featured
+      %th Title
+      %th Category
+      %th Price
+      %th
+      %th
+      %th
 
-%br
+    - @products.each do |product|
+      %tr
+        %td= product.id
+        %td= link_to "#{product.featured}", '/products/toggle_featured/' + product.id.to_s
+        %td= product.title
+        %td= product.category.name
+        %td= product.price
+        %td= link_to 'Show', product
+        %td= link_to 'Edit', edit_product_path(product)
+        %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+  %br
 
 = link_to 'New Product', new_product_path

@@ -1,11 +1,11 @@
 = link_to "Douchey Shirts", root_path, :class => 'brand'
 %ul.nav
   %li
-    %a Browse
+    =link_to "Browse", browse_index_path
   %li.divider-vertial
   %li 
-    =link_to "Featured", root_path
+    =link_to "Featured", featured_path
+  / %li 
+  /   =link_to "Sale", root_path
   %li 
-    =link_to "Sale", root_path
-  %li 
-    =link_to "New", root_path
+    =link_to "New", new_path

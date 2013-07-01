@@ -3,7 +3,7 @@ namespace :products do
 
   desc "Create fake products"
   task :fake_products => :environment do
-  	file = File.open("#{Rails.root}/app/assets/images/tshirt.jpg")
+  	file = File.open("#{Rails.root}/app/assets/images/beer_tshirt.jpg")
   	
     30.times do 
     	product = Product.new
@@ -11,6 +11,7 @@ namespace :products do
 	  	product.category_id = rand(1..3)
 	  	product.price = rand(1.00..100.00)
       product.title = "Beer + Deer = Beer"
+      product.featured = [true, false].sample
 	  	product.save
 
 	  	productPhoto = ProductPhoto.new

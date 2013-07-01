@@ -13,8 +13,8 @@ namespace :db do
 	task :categories do
 		categories = [
 			"Geeky Douche",
-			"True Douche",
-			"Party Douche"
+			"Party Douche",
+      "True Douche"
 		]
 
 		categories.each do |category|

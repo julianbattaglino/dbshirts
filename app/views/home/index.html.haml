@@ -1,6 +1,9 @@
-%h3.span4.btn= link_to "Geeky Douche"
-%h3.span4.btn= link_to "True Douche"
-%h3.span4.btn= link_to "Party Douche"
+.row-fluid
+  .span12.hero-banner= image_tag 'db-hero-banner.jpg'
+.row-fluid.main-filters
+  = link_to "Geeky Douche", '/browse/1', class: "span4 btn btn-primary"
+  = link_to "Party Douche", '/browse/2', class: "span4 btn btn-success"
+  = link_to "True Douche", 'browse/3', class: "span4 btn btn-danger"
 .row-fluid
   %hr
 = render '/products/display', locals: @products

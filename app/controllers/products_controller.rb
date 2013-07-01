@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.includes(:category).order('id DESC')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -60,7 +60,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.update_attributes(params[:product])
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+        format.html { redirect_to '/products', notice: 'Product was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -78,6 +78,20 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to products_url }
       format.json { head :no_content }
+    end
+  end
+
+  def toggle_featured
+    @product = Product.find(params[:id])
+
+    respond_to do |format|
+      if @product.toggle_featured
+        format.html { redirect_to '/products', notice: "Product #{@product.id} was successfully updated." }
+        #format.json { render json: @product.id, notice: "Product #{@product.id}was successfully updated." }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @product.errors, status: :unprocessable_entity }
+      end
     end
   end
 end

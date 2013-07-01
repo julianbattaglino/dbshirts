@@ -1,6 +1,6 @@
 module ApplicationHelper
   def full_title(page_title)
-    base_title = "Gluten Free |"
+    base_title = "Douchey Shirts "
     if page_title.empty?
       base_title
     else

@@ -1,3 +1,6 @@
+- content_for :title do
+  -'Featured'
+
 %h1{style: 'text-align: center;'} Featured
 = render '/products/display', locals: @products
 = render 'pagination'

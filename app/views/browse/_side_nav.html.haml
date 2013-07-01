@@ -1,3 +1,3 @@
 - @categories.each do |category|
-  .row-fluid
-    =link_to category.name, '/browse/' + category.id.to_s, class: "span12 btn"
+  .row-fluid{style: "margin-bottom: 10px;"}
+    =link_to category.name, '/browse/' + category.id.to_s, class: "span12 btn btn-success"

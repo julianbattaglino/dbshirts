@@ -1,19 +1,23 @@
+- content_for :title do
+  -'My Shirt'
+
 .row-fluid
   .span6
     .medium
       - @product.product_photos.each_with_index do |photo, index|
-        = link_to image_tag(photo.photo(:large)), @product.title, id: "id-#{photo.id}",  class: (index > 0 ? ' hidden' : '')
+        = link_to image_tag(photo.photo(:large)), @product.url, id: "id-#{photo.id}",  class: (index > 0 ? ' hidden' : '')
     .row-fluid.thumbs
       - @product.product_photos.each do |photo|
-        = link_to image_tag(photo.photo(:thumb)), @product.title, photo_id: "id-#{photo.id}"
+        = link_to image_tag(photo.photo(:thumb)), @product.url, photo_id: "id-#{photo.id}"
   .span6.info
-    %p
-      = link_to "Buy the shirt",  @product.deep_link, class: "btn btn-primary"
-    %p
-      = @product.title
-    %p
-      
-      = @product.category.name
-    %p
-      $
-      = @product.price
+    .row-fluid{style: "margin-bottom: 10px;"}
+      %h4.span12= @product.title
+    .row-fluid{style: "margin-bottom: 10px;"}
+      %h5.span12
+        $
+        = number_with_precision(@product.price, :precision => 2)
+    .row-fluid
+      = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'span5 btn btn-success'
+      .span1
+      = link_to "Buy the shirt",  @product.deep_link, class: "btn btn-primary span6"
+

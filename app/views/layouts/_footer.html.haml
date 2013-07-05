@@ -11,7 +11,11 @@
           = link_to 'About Us', '/'
           %ul.unstyled.sub-footer
             %li= link_to 'Careers', '/'  
-            %li= link_to 'FAQ', '/'  
+            %li= link_to 'FAQ', '/'
+            -if current_user 
+              %li= link_to "Logout", logout_path
+            -else
+              %li= link_to "Login", login_path
         .span3
           = link_to 'Terms', '/' 
           %ul.unstyled.sub-footer

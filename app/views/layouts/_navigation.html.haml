@@ -9,3 +9,5 @@
   /   =link_to "Sale", root_path
   %li 
     =link_to "New", new_path
+  -if current_user && current_user.admin = true
+    %li=link_to "Admin", admin_root_path

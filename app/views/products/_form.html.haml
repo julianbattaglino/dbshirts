@@ -5,26 +5,33 @@
       %ul
         - @product.errors.full_messages.each do |msg|
           %li= msg
-
-  .field
-    = f.label :url
-    = f.text_field :url
-  .field
-    = f.label :title
-    = f.text_field :title
-  .field
-    = f.label :category
-    = select("product", "category_id", Category.all.collect {|c| [ c.name , c.id ] })
-  .field
-    = f.label :price
-    = f.text_field :price
-  .field
-    = f.label :tags_separate_new_tags_with_commas
-    = f.text_field :tag_list
-  .field
-    = f.label :featured
-    = f.check_box :featured
-  .field
-    = link_to_add_fields "Add Image", f, :product_photos 
-  .actions
-    = f.submit 'Save'
+  %fieldset
+    .field.control-group
+      = f.label :url
+      .controls= f.text_field :url
+    .field.control-group
+      = f.label :title
+      .controls= f.text_field :title
+    .field.control-group
+      = f.label :category
+      .controls= select("product", "category_id", Category.all.collect {|c| [ c.name , c.id ] })
+    .field.control-group
+      = f.label :price
+      .controls= f.text_field :price
+    .field.control-group
+      = f.label :tags_separate_new_tags_with_commas
+      .controls= f.text_field :tag_list
+    .field.control-group
+      = f.label :featured
+      .controls= f.check_box :featured
+    .field.control-group
+      = f.fields_for :product_photos do |builder|
+        %p.remove
+          = image_tag builder.object.photo.url(:medium)
+          = builder.hidden_field :_destroy
+          = link_to_function "remove", "remove_fields(this)", class: 'btn btn-danger'
+        
+    .field.control-group
+      .control-group= link_to_add_fields "Add Image", f, :product_photos 
+    .actions
+      = f.submit 'Save', class: 'btn btn-primary span5'

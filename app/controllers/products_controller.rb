@@ -1,8 +1,10 @@
 class ProductsController < ApplicationController
+  before_filter :require_admin, only: [:index, :new, :edit, :destroy]
   # GET /products
   # GET /products.json
   def index
-    @products = Product.includes(:category).order('id DESC')
+    @products = Product.includes(:category, :product_photos).order('id DESC').paginate(page: params[:page], :per_page => 25)
+  
 
     respond_to do |format|
       format.html # index.html.erb

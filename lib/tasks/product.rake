@@ -1,4 +1,3 @@
-
 namespace :products do
 
   desc "Create fake products"

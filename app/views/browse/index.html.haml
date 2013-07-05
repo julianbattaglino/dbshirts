@@ -1,9 +1,9 @@
 - content_for :title do
   -'Browse'
-
 .row-fluid
   .span3
     = render 'side_nav'
   .span9
+    %h1.text-center Browse
     = render '/products/display', locals: @products
     = render 'pagination'

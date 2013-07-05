@@ -5,10 +5,10 @@
   .span6
     .medium
       - @product.product_photos.each_with_index do |photo, index|
-        = link_to image_tag(photo.photo(:large)), @product.url, id: "id-#{photo.id}",  class: (index > 0 ? ' hidden' : '')
+        = link_to image_tag(photo.photo(:large)), @product.deep_link, id: "id-#{photo.id}",  class: 'aff_link '+ (index > 0 ? ' hidden' : '')
     .row-fluid.thumbs
       - @product.product_photos.each do |photo|
-        = link_to image_tag(photo.photo(:thumb)), @product.url, photo_id: "id-#{photo.id}"
+        = link_to image_tag(photo.photo(:thumb)), @product.deep_link, photo_id: "id-#{photo.id}"
   .span6.info
     .row-fluid{style: "margin-bottom: 10px;"}
       %h4.span12= @product.title
@@ -17,7 +17,6 @@
         $
         = number_with_precision(@product.price, :precision => 2)
     .row-fluid
-      = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'span5 btn btn-success'
+      = link_to "Buy the shirt",  @product.deep_link, class: "aff_link btn btn-primary span6"
       .span1
-      = link_to "Buy the shirt",  @product.deep_link, class: "btn btn-primary span6"
-
+      = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'span5 btn btn-success'

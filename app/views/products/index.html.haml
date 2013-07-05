@@ -1,27 +1,32 @@
-%h1 Listing products
+%h1.text-center Listing products
 .row-fluid
-  %table.table
+  = link_to 'New Product', new_product_path, class: 'btn btn-success span4'
+  .pull-right= render 'pagination'
+%table.table.table-striped
+  %tr
+    %th Id
+    %th Image
+    %th Featured
+    %th Title
+    %th Category
+    %th Price
+    %th Tags
+    %th
+    %th
+    %th
+
+  - @products.each do |product|
     %tr
-      %th Id
-      %th Featured
-      %th Title
-      %th Category
-      %th Price
-      %th
-      %th
-      %th
+      %td= product.id
+      %td= product.product_photos.any? ? image_tag(product.product_photos.first.photo(:thumb)) : 'No Picture'
+      %td= link_to "#{product.featured}", '/products/toggle_featured/' + product.id.to_s
+      %td= product.title
+      %td= product.category.name
+      %td= product.price
+      %td= product.tag_list
+      %td= link_to 'Show', product, class: 'btn btn-primary'
+      %td= link_to 'Edit', edit_product_path(product), class: 'btn btn-success'
+      %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-danger'
+= render 'pagination'
 
-    - @products.each do |product|
-      %tr
-        %td= product.id
-        %td= link_to "#{product.featured}", '/products/toggle_featured/' + product.id.to_s
-        %td= product.title
-        %td= product.category.name
-        %td= product.price
-        %td= link_to 'Show', product
-        %td= link_to 'Edit', edit_product_path(product)
-        %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
-  %br
-
-= link_to 'New Product', new_product_path

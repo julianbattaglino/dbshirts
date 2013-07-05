@@ -15,4 +15,9 @@ $(document).ready(function(){
     $('#' + id).removeClass('hidden');
     return false;
   });
+
+  $('.aff_link').click(function() {
+    window.open($(this).attr('href'))
+    return false;
+  });
 });

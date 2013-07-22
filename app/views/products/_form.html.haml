@@ -13,6 +13,9 @@
       = f.label :title
       .controls= f.text_field :title
     .field.control-group
+      = f.label :author
+      .controls= f.text_field :author
+    .field.control-group
       = f.label :category
       .controls= select("product", "category_id", Category.all.collect {|c| [ c.name , c.id ] })
     .field.control-group

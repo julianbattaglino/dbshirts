@@ -23,11 +23,12 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'tire'
 gem 'execjs'
 gem 'paperclip'
 gem 'jquery-rails'
 gem "haml", ">= 3.1.6"
 gem "haml-rails", ">= 0.3.4", :group => :development
-gem "bootstrap-sass", ">= 2.0.4.0"
+gem "bootstrap-sass"
 gem "will_paginate", ">= 3.0.3"
 gem "therubyracer", :group => :assets, :platform => :ruby

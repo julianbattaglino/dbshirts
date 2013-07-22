@@ -8,4 +8,11 @@ class BrowseController < ApplicationController
     @categories = Category.all
     @products = Product.includes(:product_photos).where(category_id: params[:id]).order('id DESC').paginate(page: params[:page], :per_page => 24)
   end
+
+  def search
+    @categories = Category.all
+    @products = Product.search params
+  
+    render :action => "index"
+  end
 end

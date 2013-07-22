@@ -12,7 +12,8 @@ namespace :products do
 	  	product.url = "http://www.cafepress.com/mf/46453056/beer-bear-deer-vintage_tshirt"
 	  	product.category_id = rand(1..3)
 	  	product.price = rand(1.00..100.00)
-      product.title = "Beer + Deer = Beer"
+      product.title = "Bear + Deer = Beer"
+      product.author = "cafepress.com" 
       product.featured = [true, false].sample
 	  	product.save
 

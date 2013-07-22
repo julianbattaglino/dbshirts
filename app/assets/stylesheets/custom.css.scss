@@ -1,0 +1,32 @@
+.big_cup {
+	-moz-transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+  cursor: pointer;
+}
+.active {
+  .big_cup {
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg); /* Safari */
+  }
+
+  .surprise_image {
+
+    transform:rotate(1080deg);
+    -webkit-transform:rotate(1080deg); /* Safari */
+    width: 230px;
+    height: 230px;
+    margin-left: 200px;
+  }
+}
+
+.surprise_image{
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  -moz-transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}

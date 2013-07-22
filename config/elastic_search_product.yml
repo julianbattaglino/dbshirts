@@ -1,0 +1,17 @@
+analysis:
+  analyzer:
+    my_analyzer:
+      type: "custom"
+      tokenizer: "my_ngram_tokenizer"
+      filter : ["standard" ,"lowercase", "mynGram"]
+  filter:
+    mynGram:
+      type: "nGram"
+      min_gram: 2
+      max_gram: 50
+  tokenizer:
+    my_ngram_tokenizer:
+      type: "nGram"
+      min_gram: 2
+      max_gram: 50
+      token_chars: [ "letter", "digit" ]

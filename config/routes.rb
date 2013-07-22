@@ -2,9 +2,11 @@ Dbshirts::Application.routes.draw do
   resources :users
   resources :user_sessions
 
-  resources :browse , only: [:index, :show]
+  resources :browse , only: [:index, :show] do
+    collection { get :search }
+  end
   get 'products/toggle_featured/:id' => 'products#toggle_featured'
-  resources :products
+  resources :products 
   resources :categories
 
   namespace :admin do

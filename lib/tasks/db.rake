@@ -6,7 +6,8 @@ namespace :db do
   namespace :populate do
     task all: [
     	:categories,
-      :create_admin
+      :create_admin,
+      'products:fake_products'
 
     ] do
     end

@@ -11,8 +11,12 @@
   .span6.info
     .row-fluid{style: "margin-bottom: 10px;"}
       %h4.span12= @product.title
+    .row-fluid
+      .span12 Tags:
+      - @product.tags.each do |tag|
+        = tag
     .row-fluid{style: "margin-bottom: 10px;"}
-      = link_to @product.author
+      = link_to @product.author, "http://#{@product.author}"
     .row-fluid
       = link_to "See this shirt",  @product.deep_link, class: "aff_link btn btn-primary span6", rel: "nofollow"
       .span1

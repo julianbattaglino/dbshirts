@@ -23,3 +23,14 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-42129063-1', 'doucheyshirts.com');
 ga('send', 'pageview');
 
+
+// Viglinks Affiliate Network 
+var vglnk = { api_url: '//api.viglink.com/api',
+              key: '576eee7743ab5f5bd88a84fd947d2358' };
+
+(function(d, t) {
+  var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+  s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+           '//cdn.viglink.com/api') + '/vglnk.js';
+  var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+}(document, 'script'));

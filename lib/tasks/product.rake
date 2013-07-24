@@ -15,6 +15,7 @@ namespace :products do
       product.title = "Bear + Deer = Beer"
       product.author = "cafepress.com" 
       product.featured = [true, false].sample
+      product.tag_list = ['red', 'blue']
 	  	product.save
 
 	  	productPhoto = ProductPhoto.new
@@ -23,6 +24,6 @@ namespace :products do
       productPhoto.save
     end
 
-  	file.close
+  	#file.close
   end
 end

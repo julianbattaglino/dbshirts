@@ -49,7 +49,7 @@ class Product < ActiveRecord::Base
   end
 
   def deep_link
-    return self.url + "?atm_source=affiliate"
+    return self.url #+ "?atm_source=affiliate"
   end
  
   def to_indexed_json
@@ -67,7 +67,7 @@ class Product < ActiveRecord::Base
   def to_param 
     "#{id}-#{title}".parameterize
   end
-  
+
   class <<self
     def tokenize(query)
      query.split(/\s+/)

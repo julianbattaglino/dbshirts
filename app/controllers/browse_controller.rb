@@ -12,7 +12,6 @@ class BrowseController < ApplicationController
   def search
     @categories = Category.all
     @products = Product.search params
-  
     render :action => "index"
   end
 end

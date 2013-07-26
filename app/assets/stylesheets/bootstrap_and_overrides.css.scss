@@ -6,6 +6,9 @@ body { padding-top: 60px; }
 @import "bootstrap-responsive";
 $white : #f0f0f0;
 $grey: #909090;
+$purple: #8f48f0;
+$darkGray: #4d4c4d;
+
 .navbar-inner {
 	background-color: black;
 	background-image: none;
@@ -59,11 +62,11 @@ hr {
 
 .btn {
 	&.btn-primary {
-
+		background-color: $purple;
 	}
 
 	&.btn-success {
-
+		background-color: $darkGray;
 	}
 	&.btn-danger {
 		background-color: #FF1D25;

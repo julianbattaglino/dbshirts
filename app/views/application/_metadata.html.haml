@@ -1,6 +1,4 @@
-- author = "doucheyshirts.com"
-- description = "Everyone is or wants to feel like a douche bag from time to time. Shop here to find funny, and mildly inappropriate attire."
-- keywords = "doucheyshirts.com, doucheyshirt.com, douchey shirts, douche, douche bag shirt, party shirt, drinking t shirt, drinking shirts, drinking tshirt, drinking t shirt, funny shirt, geeky shirt, geeky t shirt, nerdy t shirt, nerdy shirts, funny shrit"
-%meta{:content => description, :name => "description"}
-%meta{:content => author, :name => "author"}
-%meta{:content => keywords, :name => "keywords"}
+- meta = meta_data(@title)
+%meta{:content => meta[:description], :name => "description"}
+%meta{:content => meta[:author], :name => "author"}
+%meta{:content => meta[:keywords], :name => "keywords"}

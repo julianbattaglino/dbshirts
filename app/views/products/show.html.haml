@@ -5,19 +5,20 @@
     .medium
       - @product.product_photos.each_with_index do |photo, index|
         = link_to image_tag(photo.photo(:large)), @product.deep_link, id: "id-#{photo.id}",  class: 'aff_link '+ (index > 0 ? ' hidden' : ''), rel: "nofollow"
-    .row-fluid.thumbs
+    .row-fluid.thumbs{style: 'margin: 10px 0;'}
       - @product.product_photos.each do |photo|
         = link_to image_tag(photo.photo(:thumb)), @product.deep_link, photo_id: "id-#{photo.id}", rel: "nofollow"
+    .row-fluid{style: "text-align: center;"}
+      .span12= link_to @product.author, "http://#{@product.author}"
   .span6.info
     .row-fluid{style: "margin-bottom: 10px;"}
       %h4.span12= @product.title
     .row-fluid
       .span12 Tags:
       - @product.tags.each do |tag|
-        = tag
-    .row-fluid{style: "margin-bottom: 10px;"}
-      = link_to @product.author, "http://#{@product.author}"
-    .row-fluid
-      = link_to "See this shirt",  @product.deep_link, class: "aff_link btn btn-primary span6", rel: "nofollow"
+        = link_to tag.name, "/browse/search?query=#{tag.name}", class: 'btn btn-primary', style: "margin-bottom: 5px;"
+    .row-fluid{style: "margin-top: 20px;"}
+      = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'span5 btn btn-primary'
       .span1
-      = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'span5 btn btn-success'
+      = link_to "See this shirt",  @product.deep_link, class: "aff_link btn btn-success span6", rel: "nofollow"
+      

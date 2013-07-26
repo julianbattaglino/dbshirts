@@ -3,7 +3,8 @@ gem 'rails', '3.2.12'
 gem 'mysql2'	
 gem 'acts-as-taggable-on'
 gem 'authlogic'
-
+gem 'faraday'
+gem 'faraday_middleware'
 group :development, :test do 
 	gem 'debugger'
 	gem 'better_errors'

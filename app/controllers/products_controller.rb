@@ -16,7 +16,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.includes(:category).find(params[:id])
-
+    @title = @product.title
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @product }

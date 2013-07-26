@@ -19,4 +19,12 @@ module ApplicationHelper
     end
     link_to_function(name, "add_fields(this, \"#{association}\", \"#{escape_javascript(fields)}\")")
   end
+
+  def meta_data(title = '')
+    response = {
+      author: "doucheyshirts.com",
+      description: "Everyone is or wants to feel like a douche bag from time to time. Shop here to find a funny #{title} shirt, and mildly inappropriate #{title} t shirts.",
+      keywords: "doucheyshirts.com, doucheyshirt.com, douchey shirts, douche, douche bag shirt, funny shirt, party shirt, drinking t shirt, drinking shirts, drinking tshirt, drinking t shirt, funny shirt, geeky shirt, geeky t shirt, nerdy t shirt, nerdy shirts, funny shrit, #{title} shirt, #{title} t shirt"
+    }
+  end
 end

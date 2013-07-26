@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   
   helper_method :current_user
   helper_method :current_user_is_admin?
-
+  @title = ''
+  
   def redirect_to_main_url
     redirect_to "http://doucheyshirts.com" if request.domain === "doucheyshirt.com"
   end

@@ -68,6 +68,10 @@ class Product < ActiveRecord::Base
     "#{id}-#{title}".parameterize
   end
 
+  def all_tags
+    ActsAsTaggableOn::Tagging.includes(:tag).where(:context => "products").group("tags.name").select("tags.name, count(*) as count")
+  end
+
   class <<self
     def tokenize(query)
      query.split(/\s+/)

@@ -1,4 +1,4 @@
 %p
-  = page_entries_info @products
+  = page_entries_info @products, :model => 'Shirts'
 %p
   = will_paginate @products, :container => false 

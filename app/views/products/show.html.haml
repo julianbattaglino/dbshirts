@@ -20,6 +20,8 @@
           = link_to tag.name, "/browse/search?query=#{tag.name}", class: 'btn btn-primary yellow', style: "margin-bottom: 5px;"
       .row-fluid{style: "margin-top: 20px;"}
         = link_to @product.category.name, '/browse/' + @product.category_id.to_s, class: 'black btn btn-primary font-large'
+      .row-fluid{style: "margin-top: 10px;"}
+        = @product.description
         / .span1
         / = link_to "See this shirt",  @product.deep_link, class: "aff_link btn btn-success span6", rel: "nofollow"
         / 

@@ -11,9 +11,7 @@
               %img{alt: "VigLink badge", height:"31", src:"//www.viglink.com/images/badges/88x31.png", title: "Links monetized by VigLink", width: "88"}
         .span3  
           = link_to 'About Us', '/'
-          %ul.unstyled.sub-footer
-            %li= link_to 'Careers', '/'  
-            %li= link_to 'FAQ', '/'
+          %ul.unstyled.sub-footer 
             -if current_user 
               %li= link_to "Logout", logout_path
             -else

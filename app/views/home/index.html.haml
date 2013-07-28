@@ -6,11 +6,6 @@
     = image_tag 'big_red_cup.png', class: 'big_cup'
     - product = Product.order("rand()").first
     = product = link_to(image_tag(product.product_photos.first.photo(:medium), class: 'surprise_image'), product)
-.row-fluid.main-filters
-  = link_to "Geeky Douche", '/browse/1', class: "span4 btn btn-success", style: 'margin-bottom: 10px;'
-  = link_to "Party Douche", '/browse/2', class: "span4 btn btn-success", style: 'margin-bottom: 10px;'
-  = link_to "True Douche", 'browse/3', class: "span4 btn btn-success", style: 'margin-bottom: 10px;'
-
-= render '/products/display', locals: @products
+= render '/themes/display', locals: @products
 
 

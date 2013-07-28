@@ -2,10 +2,10 @@
   -'Browse'
 .row-fluid
   .span3
-    = render 'side_nav'
+    = render '/themes/side_nav'
   .span9
     %h1.text-center
       Browse
       = ": #{params[:query]}"if params[:query]
-    = render '/products/display', locals: @products
-    = render 'pagination'
+    = render '/themes/display', locals: @themes
+    = render 'pagination_theme'

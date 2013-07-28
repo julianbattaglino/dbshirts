@@ -14,8 +14,8 @@ class ThemesController < ApplicationController
   # GET /themes/1
   # GET /themes/1.json
   def show
-    @theme = Theme.find(params[:id])
-
+    @theme = Theme.includes(:products).find(params[:id])
+    @products = @theme.products
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @theme }

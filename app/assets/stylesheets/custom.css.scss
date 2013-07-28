@@ -1,3 +1,10 @@
+$white : #aaa;
+$grey: #909090;
+$purple: #c2159f;
+$darkGray: #4d4c4d;
+$yellow: #fff799;
+$black: #1d1d1d;
+
 .big_cup {
 	-moz-transition: all 1s ease;
 	-webkit-transition: all 1s ease;
@@ -47,5 +54,25 @@
   
   &:hover {
     cursor: pointer
+  }
+}
+.theme {
+  padding: 0 10px 10px;
+  text-align: center;
+  height: 100%;
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h4 {
+    background-color: $purple;
+    color: $black;
+    padding: 5px;
+    border-radius: 2px;
+    font-family: Orator;
+    span {
+      color: $yellow;
+    }
   }
 }

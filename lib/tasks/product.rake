@@ -16,6 +16,9 @@ namespace :products do
       product.author = "cafepress.com" 
       product.featured = [true, false].sample
       product.tag_list = ['red', 'blue']
+      product.theme_id = rand(1..3)
+      product.description = "Come one come all! Get your #{product.title} t shirts! We almost died collecting this compilation. Raw Rawer RaWRERR"
+
 	  	product.save
 
 	  	productPhoto = ProductPhoto.new

@@ -7,6 +7,7 @@ namespace :db do
     task all: [
     	:categories,
       :create_admin,
+      'themes:fake_themes',
       'products:fake_products'
 
     ] do

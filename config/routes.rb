@@ -1,7 +1,5 @@
 Dbshirts::Application.routes.draw do
   resources :themes
-
-
   resources :users
   resources :user_sessions
 
@@ -15,7 +13,8 @@ Dbshirts::Application.routes.draw do
   namespace :admin do
     root to: 'index#index'
   end
-
+  
+  get "top_7" => "browse#themes"
   get "login" => "user_sessions#new"
   get "logout" => "user_sessions#destroy"
   get 'new' => 'home#new'

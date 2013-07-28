@@ -13,6 +13,9 @@
           <h5>
             <%= product.title %>
           </h5>
+          <% if params[:controller] == 'themes' %> 
+            <p><%= product.description %></p>
+          <% end %>
           <% product.tags.each do |tag| %>
             <%= link_to "#{tag.name} shirt", "/browse/search?query=#{tag.name}", class: "btn btn-primary yellow", style: 'margin-bottom: 5px;' %>
           <% end %>

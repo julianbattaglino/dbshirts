@@ -17,4 +17,8 @@ class BrowseController < ApplicationController
     @tags = Product.all_tags
     render :action => "index"
   end
+
+  def themes
+    @themes = Theme.includes(:products).where(published: true).paginate(page: params[:page], :per_page => 24)
+  end
 end

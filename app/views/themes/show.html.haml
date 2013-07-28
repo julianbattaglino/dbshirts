@@ -1,12 +1,4 @@
 %p#notice= notice
-
-%p
-  %b Title:
-  = @theme.title
-%p
-  %b Description:
-  = @theme.description
-
-= link_to 'Edit', edit_theme_path(@theme)
-\|
-= link_to 'Back', themes_path
+%h2.text-center= @theme.title
+%p.text-center= @theme.description
+= render '/products/display', locals: @products

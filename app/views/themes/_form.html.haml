@@ -1,0 +1,30 @@
+= form_for @theme do |f|
+  - if @theme.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@theme.errors.count, "error")} prohibited this theme from being saved:"
+      %ul
+        - @theme.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field.margin-bottom
+    = f.label :published
+    = f.check_box :published
+  .field.drag_target.margin-bottom
+    = f.label :products_in_this_theme
+    - @theme.products.each do |product|
+      .draggable{style: "display:inline-block;"}
+        = link_to image_tag(product.product_photos.first.photo(:thumb)), edit_product_path(product)
+
+  .field.drag_target.margin-bottom
+    = f.label :products_not_in_this_theme
+    - @products.each do |product|
+      .draggable{style: "display:inline-block;"}
+        = link_to image_tag(product.product_photos.first.photo(:thumb)), edit_product_path(product)
+  .actions
+    = f.submit 'Save'

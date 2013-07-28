@@ -1,7 +1,21 @@
 .thumbs, .medium {
   text-align: center;
 }
-.info {
-  background-color: #EfEfEf;
-  padding: 20px;
+.info {  
+  h4 {
+    background-color: #1d1d1d;
+    transform:rotate(-4deg);
+    padding: 20px;
+    color: #909090;
+    -webkit-transform:rotate(-4deg); /* Safari */
+    font-family: Orator;
+    background-image: url('filter.png');
+    background-position: 0 0;
+    background-repeat:  1/20px repeat;
+    border: 1px solid black;
+  }
+  .info-content {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

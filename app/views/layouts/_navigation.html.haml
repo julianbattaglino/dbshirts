@@ -1,18 +1,20 @@
-= link_to "Douchey Shirts", root_path, :class => 'brand'
-%ul.nav
+.logo_container  
+  = link_to image_tag('logo.png'), root_path, style: "display:block; position: absolute;"
+%ul.nav.font-large
   %li
-    =link_to "Browse", browse_index_path
+    =link_to "browse.", browse_index_path
   %li.divider-vertial
   %li 
-    =link_to "Featured", featured_path
-  / %li 
-  /   =link_to "Sale", root_path
+    =link_to "featured.", featured_path
   %li 
-    =link_to "New", new_path
+    =link_to "top 7s.", root_path
+  %li 
+    =link_to "new.", new_path
   -if current_user && current_user.admin = true
-    %li=link_to "Admin", admin_root_path
+    %li=link_to "admin.", admin_root_path
 
-= form_tag search_browse_index_path, :method => 'get', class: "form-search pull-right", style: 'padding-top: 5px; margin-bottom: 0;' do
+= form_tag search_browse_index_path, :method => 'get', class: "pull-right search_form", style: 'padding-top: 10px; margin-bottom: 0;' do
   .input-append   
-    = text_field_tag :query, params[:query], class: 'span2 search-query' 
-    = submit_tag 'Search', class: 'btn'
+    = text_field_tag :query, params[:query], class: 'span2 search-query', style: 'margin-right: 5px;'
+    = image_submit_tag("search.png") 
+    = #submit_tag :type => :image, src: '/assets/search.png'

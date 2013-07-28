@@ -1,6 +1,6 @@
 - @categories.each do |category|
   .row-fluid{style: "margin-bottom: 10px;"}
-    =link_to category.name, '/browse/' + category.to_param.to_s, class: "span12 btn btn-success"
+    =link_to category.name, '/browse/' + category.to_param.to_s, class: "span12 btn btn-primary black"
 .row-fluid{style: "margin-bottom: 10px;"}
   - @tags.each do |tag|
-    =link_to tag.name, '/browse/search?query=' + tag.name.parameterize, class: "btn btn-primary", style: 'margin-bottom: 10px;'
+    =link_to tag.name, '/browse/search?query=' + tag.name.parameterize, class: "btn btn-primary yellow", style: 'margin-bottom: 10px;'

@@ -1,4 +1,7 @@
 Dbshirts::Application.routes.draw do
+  resources :themes
+
+
   resources :users
   resources :user_sessions
 

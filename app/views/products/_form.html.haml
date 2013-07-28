@@ -19,6 +19,12 @@
       = f.label :category
       .controls= select("product", "category_id", Category.all.collect {|c| [ c.name , c.id ] })
     .field.control-group
+      = f.label :theme
+      .controls= select("product", "theme_id", Theme.all.collect {|t| [ t.title , t.id ] }, { include_blank: true })
+    .field
+      = f.label :description
+      = f.text_area :description
+    .field.control-group
       = f.label :price
       .controls= f.text_field :price
     .field.control-group

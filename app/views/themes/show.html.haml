@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @theme.title
+%p
+  %b Description:
+  = @theme.description
+
+= link_to 'Edit', edit_theme_path(@theme)
+\|
+= link_to 'Back', themes_path

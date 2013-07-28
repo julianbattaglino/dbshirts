@@ -2,24 +2,65 @@
 $iconSpritePath: asset-url('glyphicons-halflings.png', image);
 $iconWhiteSpritePath: asset-url('glyphicons-halflings-white.png', image);
 @import "bootstrap";
-body { padding-top: 60px; }
-@import "bootstrap-responsive";
-$white : #f0f0f0;
-$grey: #909090;
-$purple: #8f48f0;
-$darkGray: #4d4c4d;
 
+@font-face {
+    font-family: 'ImpactRegular';
+    src: url('5200.eot');
+    src: url('5200.eot') format('embedded-opentype'),
+         url('5200.woff') format('woff'),
+         url('5200.ttf') format('truetype'),
+         url('5200.svg#ImpactRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Orator';
+  src: url('orator-std-medium.eot');
+  src: url('orator-std-medium.eot') format('embedded-opentype'),
+       url('orator-std-medium.woff') format('woff'),
+       url('orator-std-medium.ttf') format('truetype'),
+       url('orator-std-medium.svg#OratorStdMedium') format('svg');
+}
+
+// @font-face {
+//   font-family: 'Impact';
+//   font-weight: normal;
+//   font-style: normal;
+//   src: url('5200.eot?#iefix') format('embedded-opentype'), 
+//     url('5200.woff') format('woff'), 
+//     url('5200.ttf')  format('truetype'),
+//     url('5200.svg#svgFontName') format('svg');
+//}
+
+body { 
+	padding-top: 110px;
+	font-family: ImpactRegular;
+	letter-spacing: 1px;
+}
+@import "bootstrap-responsive";
+
+$white : #aaa;
+$grey: #909090;
+$purple: #c2159f;
+$darkGray: #4d4c4d;
+$yellow: #fff799;
+$black: #1d1d1d;
+.navbar {
+	border-bottom: 45px $yellow solid;
+	box-shadow: 0 4px 2px -2px $purple;
+}
 .navbar-inner {
 	background-color: black;
 	background-image: none;
-	.brand {
-		text-shadow: none;
-		color: $white;
-		font-weight: 500;
+	font-size: 18px;
+	box-shadow: none;
+	ul.nav {
+		margin-top: 10px;
 	}
-
-	ul {
-
+	.logo_container {
+		float: left;
+		position: relative; 
+		width: 169px;
+		height: 42px;
 	}
 }
 
@@ -40,7 +81,8 @@ hr {
 	@media (max-width: 767px) {
 	  margin: 60px -20px 0 -20px;
 	}	
-	border-top: 20px solid $grey;
+	border-top: 20px solid $yellow;
+	box-shadow: 0 0 0 20px $purple;
 	padding:20px 0;
 	background-color: black;
 	a {
@@ -60,7 +102,22 @@ hr {
 	background-image: none;
 }
 
+.yellow {
+	color: $yellow;
+}
+
+.black{
+	color: $black;
+}
+
 .btn {
+	//text-shadow: none;
+	border-radius: 2px;
+	font-size: 18px;
+	
+	&.font-large{
+		font-size: 24px;
+	}
 	&.btn-primary {
 		background-color: $purple;
 	}
@@ -71,4 +128,23 @@ hr {
 	&.btn-danger {
 		background-color: #FF1D25;
 	}
-}	
+}
+// media queries
+
+@media (max-width: 767px) {
+	.navbar-inner {
+		border: none;
+		.logo_container {
+			height: 95px;
+		}
+		.search-query {
+			max-width: 85px;
+
+		}
+		.search_form {
+			position:absolute;
+			top: 10px;
+			right: 5px;
+		}
+	}
+}

@@ -5,10 +5,11 @@ class Product < ActiveRecord::Base
   include Tire::Model::Search
   include Tire::Model::Callbacks
 
-  attr_accessible :category_id, :price, :title, :url, :featured ,:product_photos, :product_photos_attributes, :tags, :tag_list, :author
+  attr_accessible :category_id, :description, :theme_id, :price, :title, :url, :featured ,:product_photos, :product_photos_attributes, :tags, :tag_list, :author
   acts_as_taggable
   belongs_to :category
   has_many :product_photos, :dependent => :destroy
+  belongs_to :theme
 
   accepts_nested_attributes_for :product_photos, :reject_if => lambda {|a| a[:photo].blank?} , :allow_destroy => true
   

@@ -30,3 +30,22 @@
   -o-transition: all 3s ease;
   transition: all 3s ease;
 }
+
+.margin-bottom{
+  margin-bottom: 10px;
+}
+
+.drag_target {
+  min-height: 300px;
+  padding: 10px;
+  background-color: #4d4c4d;
+  color: white;
+}
+
+.draggable {
+  padding: 10px;
+  
+  &:hover {
+    cursor: pointer
+  }
+}

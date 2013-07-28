@@ -7,5 +7,5 @@
     %h1.text-center
       Browse
       = ": #{params[:query]}"if params[:query]
-    = render '/products/display', locals: @products
+    = render '/products/display', locals: @themes
     = render 'pagination'

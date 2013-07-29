@@ -5,7 +5,7 @@ class Product < ActiveRecord::Base
   include Tire::Model::Search
   include Tire::Model::Callbacks
 
-  attr_accessible :category_id, :description, :theme_id, :price, :title, :url, :featured ,:product_photos, :product_photos_attributes, :tags, :tag_list, :author
+  attr_accessible :category_id, :weight, :description, :theme_id, :price, :title, :url, :featured ,:product_photos, :product_photos_attributes, :tags, :tag_list, :author
   acts_as_taggable
   belongs_to :category
   has_many :product_photos, :dependent => :destroy
@@ -23,6 +23,8 @@ class Product < ActiveRecord::Base
   #   indexes :tag_name,            :analyzer => 'snowball'
   #   indexes :published_on,        :type => 'date', :include_in_all => false
   # end
+  scope :by_weight, -> { order(weight: 'ASC') }
+
   settings ElasticSearchSettingsForProduct do
     mapping do
       # [:title, :author, :category_name, :tag_name].each do |attribute|

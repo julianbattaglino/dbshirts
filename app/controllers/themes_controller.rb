@@ -15,7 +15,7 @@ class ThemesController < ApplicationController
   # GET /themes/1.json
   def show
     @theme = Theme.includes(:products).find(params[:id])
-    @products = @theme.products
+    @products = @theme.products_by_weight
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @theme }
@@ -37,7 +37,7 @@ class ThemesController < ApplicationController
   # GET /themes/1/edit
   def edit
     @theme = Theme.find(params[:id])
-    @products = Product.find_all_by_theme_id(nil)
+    @products = Product.find_all_by_theme_id(nil).by_weight
   end
 
   # POST /themes

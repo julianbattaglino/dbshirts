@@ -8,165 +8,358 @@
 
 <url>
   <loc>http://doucheyshirts.com/</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/browse</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/featured</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/search?query=funny%20shirt</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/top_7</loc>
+  <changefreq>weekly</changefreq>
+</url>
 <url>
   <loc>http://doucheyshirts.com/new</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/2-closed-minds</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/1-dinosaur</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/1</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/2-lifting</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/2</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/3-vodka</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/3</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/4-college</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/17-still-talking</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/5-sloth</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/search?query=mean%20shirt</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/6-politics</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/16-party-after-party</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=funny%20shirt</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/15-merica</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/14-gone-squatching</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=hunting</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/13-the-second-amendment-the-right-to-bear-arms</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/12-douchey-mcdouche-s-house-of-douchbaggery</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=douche%20bag</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/11-adhd</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=funny</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/10-that-s-what-she-said</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=party</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/themes/7-sound-out</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/products/9-boss-of-the-toss</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=cornhole</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/8-no-i-will-not-fix-your-computer</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=computer</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=programming</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/7-try-not-to-trip-over-my-weiner</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=animal</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/products/6-ah-the-element-of-surprise-t-shirt</loc>
-  <changefreq>daily</changefreq>
-</url>
-<url>
-  <loc>http://doucheyshirts.com/browse/search?query=periodic%20table</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/login</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/5-party-like-it-s-1984</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/browse/1-geeky-douche</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/search?query=politics</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/browse/2-party-douche</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/4-let-s-get-star-spangled-hammered-y-all</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/browse/3-true-douche</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/search?query=drinking</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/products/31-this-is-a-job-for-alchol</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/products/3-don-t-always-test-my-code</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/browse/search?query=coffee</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
-  <loc>http://doucheyshirts.com/browse/search?query=testing</loc>
-  <changefreq>daily</changefreq>
+  <loc>http://doucheyshirts.com/browse/search?query=alchol</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/30-sofa-king</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=say%20it%20out%20loude</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/29-girl-warms-up-with-your-max</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=lifting</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=muscle</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=rude</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/28-bitches</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=dinosaur</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/27-bros-before-dinos</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/26-velociraptor-don-t-give-a-shit</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=offensive</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/25-g-rex</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=funny</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=nerdy</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/24-i-love-you-this-much</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/23-studen-loans-broke</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=college</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=clever</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/22-nar-wars</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=whales</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=star%20wars</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=goofy</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/21-i-m-with-the-muggle</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=harry%20potter</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=geo%20caching</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/20-suns-out-guns-out</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=summer</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=muscles</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/19-live-slow-die-whenever</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=animal</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/18-i-d-flex-but-i-like-this-shirt</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/17-still-talking</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/browse/search?query=mean</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/16-party-after-party</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=party</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=drinking</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=red%20cup</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/15-merica</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=political</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=shameless</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/14-gone-squatching</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=hunting</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/13-the-second-amendment-the-right-to-bear-arms</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/12-douchey-mcdouche-s-house-of-douchbaggery</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=douche%20bag</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/11-adhd</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/10-that-s-what-she-said</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=cornhole</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/8-no-i-will-not-fix-your-computer</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=computer</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=programming</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse?page=2</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/5-party-like-it-s-1984</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=politics</loc>
+  <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://doucheyshirts.com/products/1-hakuna-some-vodka</loc>
-  <changefreq>daily</changefreq>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=lion%20king</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/new?page=2</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/2</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/6-ah-the-element-of-surprise-t-shirt</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=periodic%20table</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/3-don-t-always-test-my-code</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/4-let-s-get-star-spangled-hammered-y-all</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/7-try-not-to-trip-over-my-weiner</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/products/2-closed-minds</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/search?query=humor</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/1</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse/3</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/browse?page=1</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://doucheyshirts.com/new?page=1</loc>
+  <changefreq>weekly</changefreq>
 </url>
 </urlset>

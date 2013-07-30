@@ -19,6 +19,6 @@ class BrowseController < ApplicationController
   end
 
   def themes
-    @themes = Theme.includes(:products).where(published: true).paginate(page: params[:page], :per_page => 24)
+    @themes = Theme.where(published: true).paginate(page: params[:page], :per_page => 24)
   end
 end

@@ -4,7 +4,7 @@ module ApplicationHelper
     if page_title.empty?
       base_title
     else
-      "#{base_title} | #{page_title}"
+      "#{page_title} | #{base_title}"
     end
   end
 
@@ -23,8 +23,8 @@ module ApplicationHelper
   def meta_data(title = '')
     response = {
       author: "doucheyshirts.com",
-      description: "Everyone is or wants to feel like a douche bag from time to time. Shop here to find a funny #{title} shirt, and mildly inappropriate #{title} t shirts.",
-      keywords: "doucheyshirts.com, doucheyshirt.com, douchey shirts, douche, douche bag shirt, funny shirt, party shirt, drinking t shirt, drinking shirts, drinking tshirt, drinking t shirt, nerdy shirt, geeky shirt, dirty t shirt, nerdy t shirt, nerdy shirts, funny shrit, #{title} shirt, #{title} t shirt"
+      description: "We are where to find funny #{title} shirts; also refered to as a inappropriate or offensive #{title} t-shirt by the less informed. Ok so maybe some are offensive, but everyone wants feels like a douche bag from time to time.",
+      keywords: "t-shirts, shirts, tee shirts, tshirts, doucheyshirts.com, doucheyshirt.com, douchey shirts, douche, douche bag shirt, funny shirt, party shirt, drinking t-shirt, drinking shirts, offensive t-shirt, drinking t-shirt, nerdy shirt, geeky shirt, dirty t-shirt, nerdy t-shirt, nerdy shirts, funny shrit, #{title} shirt, #{title} t-shirt"
     }
   end
 end

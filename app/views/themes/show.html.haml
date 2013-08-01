@@ -1,4 +1,6 @@
+- content_for :title do
+  -"#{@theme.title.capitalize} Shirts"
 %p#notice= notice
-%h2.text-center= @theme.title
+%h2.text-center= "#{@theme.title} t-shirts"
 %p.text-center= @theme.description
 = render '/products/display', locals: @products

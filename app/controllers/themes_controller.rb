@@ -37,7 +37,7 @@ class ThemesController < ApplicationController
   # GET /themes/1/edit
   def edit
     @theme = Theme.find(params[:id])
-    @products = Product.find_all_by_theme_id(nil).by_weight
+    @products = Product.by_weight.find_all_by_theme_id(nil)
   end
 
   # POST /themes

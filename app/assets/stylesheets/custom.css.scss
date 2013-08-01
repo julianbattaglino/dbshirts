@@ -12,6 +12,9 @@ $black: #1d1d1d;
 	transition: all 1s ease;
   cursor: pointer;
 }
+.image_border {
+  display: inline-block;
+}
 .active {
   .big_cup {
     transform:rotate(90deg);

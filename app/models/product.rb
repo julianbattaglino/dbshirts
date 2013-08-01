@@ -9,6 +9,7 @@ class Product < ActiveRecord::Base
   acts_as_taggable
   belongs_to :category
   has_many :product_photos, :dependent => :destroy
+  has_many :tracks, as: :trackable
   belongs_to :theme
 
   accepts_nested_attributes_for :product_photos, :reject_if => lambda {|a| a[:photo].blank?} , :allow_destroy => true
@@ -50,7 +51,15 @@ class Product < ActiveRecord::Base
 
     self.save
   end
+  
+  def viewed
+    track = self.tracks.find_or_create_by_day(Time.now.strftime('%m-%d-%y')).increment!(:views)
+  end
 
+  def views
+    tracks.sum(:views)
+  end
+  
   def deep_link
     return self.url #+ "?atm_source=affiliate"
   end

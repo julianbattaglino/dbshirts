@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  views: 1
+  ip: MyString
+  trackable_id: 1
+  trackable_type: MyString
+  date: MyString
+
+two:
+  views: 1
+  ip: MyString
+  trackable_id: 1
+  trackable_type: MyString
+  date: MyString

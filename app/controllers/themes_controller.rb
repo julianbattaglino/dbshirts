@@ -15,6 +15,7 @@ class ThemesController < ApplicationController
   # GET /themes/1.json
   def show
     @theme = Theme.includes(:products).find(params[:id])
+    @theme.viewed
     @products = @theme.products_by_weight
     respond_to do |format|
       format.html # show.html.erb

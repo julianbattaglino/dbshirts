@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.includes(:category, :product_photos).order('id DESC').paginate(page: params[:page], :per_page => 25)
-  
 
     respond_to do |format|
       format.html # index.html.erb
@@ -16,6 +15,7 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
     @product = Product.includes(:category).find(params[:id])
+    @product.viewed
     @title = @product.title
     respond_to do |format|
       format.html # show.html.erb

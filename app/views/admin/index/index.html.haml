@@ -12,3 +12,18 @@
       = link_to 'Add a New Category', new_category_path, class: "btn btn-primary span12"
     .row-fluid.margin-bottom
       = link_to 'View Categories', categories_path, class: "btn btn-primary span12"  
+  .span8
+    .row-fluid
+      %h5 Theme Total Views
+    .row-fluid
+      - @themes.each do |theme|
+        .span2= theme.title
+        - theme.tracks.order('created_at DESC').limit(5).each do |track|
+          .span2
+            .text-center= track.day
+            %p.text-center= track.views
+    / .row-fluid
+    /   %h5 Product Total Views
+    / .row-fluid
+    /   - @products.each do |product|
+    /     .span12= product.views

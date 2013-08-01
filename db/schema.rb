@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130729052708) do
+ActiveRecord::Schema.define(:version => 20130801053934) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -67,6 +67,16 @@ ActiveRecord::Schema.define(:version => 20130729052708) do
     t.datetime "updated_at",                     :null => false
     t.integer  "weight"
     t.boolean  "published",   :default => false
+  end
+
+  create_table "tracks", :force => true do |t|
+    t.integer  "views",          :default => 1
+    t.string   "ip"
+    t.integer  "trackable_id"
+    t.string   "trackable_type"
+    t.string   "day"
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   create_table "users", :force => true do |t|

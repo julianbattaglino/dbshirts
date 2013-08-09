@@ -14,6 +14,7 @@ Dbshirts::Application.routes.draw do
     root to: 'index#index'
   end
   
+  post 'product_converted' => 'products#converted'
   get "top_7" => "browse#themes"
   get "login" => "user_sessions#new"
   get "logout" => "user_sessions#destroy"

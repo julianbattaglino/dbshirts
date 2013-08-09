@@ -23,7 +23,7 @@
       .row-fluid{style: "margin-top: 10px;"}
         = @product.description
       .row-fluid{style: 'margin-top: 30px'}
-        = link_to 'Buy', @product.deep_link, class: 'btn btn-success yellow font-large'
+        = link_to 'Buy', @product.deep_link, class: 'btn btn-success yellow font-large aff_link', product_id: @product.id
         / .span1
         / = link_to "See this shirt",  @product.deep_link, class: "aff_link btn btn-success span6", rel: "nofollow"
         / 

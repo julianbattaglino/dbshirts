@@ -12,6 +12,7 @@
     %th Price
     %th Tags
     %th Views
+    %th Conv
     %th
     %th
     %th
@@ -26,6 +27,7 @@
       %td= product.price
       %td= product.tag_list
       %td= product.views
+      %td= product.conversions
       %td= link_to 'Show', product, class: 'btn btn-primary'
       %td= link_to 'Edit', edit_product_path(product), class: 'btn btn-success'
       %td= link_to 'Destroy', product, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-danger'

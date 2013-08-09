@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   $('.aff_link').click(function() {
     window.open($(this).attr('href'))
+    $.post('/product_converted', {id: $(this).attr('product_id')})
     return false;
   });
 });

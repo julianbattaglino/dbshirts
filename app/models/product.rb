@@ -60,6 +60,14 @@ class Product < ActiveRecord::Base
     tracks.sum(:views)
   end
   
+  def converted
+    self.tracks.find_or_create_by_day(Time.now.strftime('%m-%d-%y')).increment!(:conversions)
+  end
+  
+  def conversions
+    tracks.sum(:conversions)
+  end
+
   def deep_link
     return self.url #+ "?atm_source=affiliate"
   end

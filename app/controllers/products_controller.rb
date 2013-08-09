@@ -96,4 +96,10 @@ class ProductsController < ApplicationController
       end
     end
   end
+
+  def converted
+    @product = Product.find(params[:id])
+    @product.converted
+    render nothing: true
+  end
 end

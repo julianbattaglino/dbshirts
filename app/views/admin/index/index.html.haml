@@ -15,13 +15,14 @@
   .span8
     .row-fluid
       %h5 Theme Total Views
-    .row-fluid
       - @themes.each do |theme|
-        .span2= theme.title
-        - theme.tracks.order('created_at DESC').limit(5).each do |track|
-          .span2
-            .text-center= track.day
-            %p.text-center= track.views
+        .row-fluid
+          .span2= theme.title
+          - theme.tracks.order('created_at DESC').limit(5).each do |track|
+            .span2
+              .text-center= track.day
+              %p.text-center= track.views
+
     / .row-fluid
     /   %h5 Product Total Views
     / .row-fluid

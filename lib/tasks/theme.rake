@@ -14,6 +14,7 @@ namespace :themes do
       theme.published = true
       theme.description = "Come one come all! Get your #{value} t shirts! We almost died collecting this compilation. Raw Rawer RaWRERR"
       theme.save
+      theme.viewed
     end
   end
 end

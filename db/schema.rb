@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130801053934) do
+ActiveRecord::Schema.define(:version => 20130809035553) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(:version => 20130801053934) do
     t.integer  "weight",                                                    :default => 100
   end
 
+  add_index "products", ["weight"], :name => "products_weight_index"
+
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
@@ -65,12 +67,14 @@ ActiveRecord::Schema.define(:version => 20130801053934) do
     t.text     "description"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
-    t.integer  "weight"
+    t.integer  "weight",      :default => 100
     t.boolean  "published",   :default => false
   end
 
+  add_index "themes", ["weight"], :name => "themes_weight_index"
+
   create_table "tracks", :force => true do |t|
-    t.integer  "views",          :default => 1
+    t.integer  "views",          :default => 0
     t.string   "ip"
     t.integer  "trackable_id"
     t.string   "trackable_type"

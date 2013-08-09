@@ -20,7 +20,7 @@ namespace :products do
       product.description = "Come one come all! Get your #{product.title} t shirts! We almost died collecting this compilation. Raw Rawer RaWRERR"
 
 	  	product.save
-
+      product.viewed
 	  	productPhoto = ProductPhoto.new
 	  	productPhoto.photo = file[rand(0..1)]
 	  	productPhoto.product_id = product.id
